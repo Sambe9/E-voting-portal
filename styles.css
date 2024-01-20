@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #7298dd;
+    color: #0e0c0c;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+.candidates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.candidate {
+    background-color: #d4d4d4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1em;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.candidate img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.candidate-info {
+    padding: 1em;
+}
+
+.vote-button {
+    background-color: #4caf50;
+    color: #afd5e7;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.vote-button:hover {
+    background-color: #47b64c;
+}
+
+.voting-percentage {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.2em;
+}
