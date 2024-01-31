@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Election Commission</title>
-    <ul class="nav justify-content-center"></ul>
+    <title>CR Election Portal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Election Commission E-VOTE for Class </h1>
-    </header>
-    <main>
-        <div class="candidates" id="candidatesContainer"></div>
 
-        <div class="voting-percentage" id="votingPercentage">
-            <p>Voting Percentage: <span id="percentage">0%</span></p>
+<body>
+
+    <header>
+        <h1>Class Representative Elections E-Vote Portal</h1>
+    </header>
+    <div class="container">
+        <div class="container">
+            <div class="candidate" id="candidate1">
+                <img src="anil.png" alt="Candidate 1">
+                <p><strong>B.ANIL TEJ (INC)</strong></p>
+                <button class="vote-button" onclick="vote('candidate1')">Vote for INC</button>
+            </div>
+
+            <div class="candidate" id="candidate2">
+                <img src="mohan.png" alt="Candidate 2">
+                <p><strong>B.MOHANA KRISHNA (BJP)</strong></p>
+                <button class="vote-button" onclick="vote('candidate2')">Vote for BJP</button>
+            </div>
         </div>
-    </main>
+        <div id="result-chart"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
